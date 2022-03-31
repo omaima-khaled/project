@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Ecommerce</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside id='main-side'>
+            <div class="brand">
+                <div class="brand-name">
+                    <img src="imge/logo.36f34a9f.svg" alt="">
+                    <h1>vuexy</h1>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-compact-disc"></i>
+                </div>
+
+            </div>
+            <!--
+            <div class=".DashBord">
+                
+                <div class="dropdown1">
+                   
+                    <button class="dropbtn1">English</button>
+                    <div class="dropdown1-content">
+                        <a href="#">French</a>
+                        <a href="#">French</a>
+                        <a href="#">German</a>
+                        <a href="#">Portuguese</a>
+                    </div>
+                    <div><i class="fas fa-angle-right"></i></div>
+                </div>
+              
+            </div>-->
+            <div class="navigation-bar">
+                <ul>
+                    <span>APPS&PAGES</span>
+                    <li> <a class="nav-item" href=""> <i class="far fa-envelope"></i>Email</a></li>
+                    <li> <a class="nav-item" href=""> <i class="far fa-comment-alt"></i>Chat</a></li>
+                    <li> <a class="nav-item" href=""> <i class="far fa-check-square"></i>ToDo</a></li>
+                    <li> <a class="nav-item" href=""> <i class="far fa-calendar"></i>Calender</a></li>
+                </ul>
+                <ul>
+                    <span>USER INTERFACE</span>
+                    <li> <a class="nav-item" href=""><i class="fal fa-text"></i>Typography</a></li>
+                    <li> <a class="nav-item" href=""> <i class="fas fa-tint"></i>Colors</a></li>
+                    <li> <a class="nav-item" href=""><i class="fas fa-eye"></i>Feature</a></li>
+                    <li> <a class="nav-item" href=""> <i class="fas fa-credit-card"></i>Cards</a></li>
+                    <li> <a class="nav-item" href=""> <i class="fas fa-plus-circle"></i>Extentions</a></li>
+
+                </ul>
+                <ul>
+                    <span>FORMS&TABLES</span>
+                    <li> <a class="nav-item" href="">Form Layout</a></li>
+                    <li> <a class="nav-item" href="">Form wizard</a></li>
+                    <li> <a class="nav-item" href="">Form Validation</a></li>
+                    <li> <a class="nav-item" href="">Form Repeater</a></li>
+                    <li> <a class="nav-item" href="">Bs Table</a></li>
+                    <li> <a class="nav-item" href="">Good Table</a></li>
+
+                </ul>
+            </div>
+        </aside>
+        <section class="homeScreen">
+            <section class="header-navbar">
+                <div class="rightIcon">
+                    <a href=""><i class="far fa-calendar"></i></a>
+                    <a href=""><i class="far fa-comment-alt"></i></a>
+                    <a href=""> <i class="far fa-envelope"></i></a>
+                    <a href=""> <i class="far fa-check-square"></i></a>
+                    <a href=""> <i id="star" class="far fa-star"></i></a>
+                </div>
+                <div class="leftIcon">
+                    <div class="dropdown">
+                        <button class="dropbtn">English</button>
+                        <div class="dropdown-content">
+                            <a href="#">French</a>
+                            <a href="#">French</a>
+                            <a href="#">German</a>
+                            <a href="#">Portuguese</a>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <a href=""><i class="far fa-moon"></i></a>
+                        <a href=""><i class="fas fa-search"></i></a>
+                        <a href=""><i class="fas fa-shopping-cart"></i></a>
+                        <a href=""><i class="far fa-bell"></i></a>
+                    </div>
+                    <div class="personal">
+                        <div class="data">
+                            <P>JOHN DOE</P>
+                            <span>admin</span>
+                        </div>
+                        <div class="photo">
+                            <img src="imge/5ca389adc6cc503c5a53fd96.webp" alt="">
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </section>
+            <section class="content">
+                <aside class="sidebar">
+                    <div class="title">
+                        <p>Filters</p>
+                    </div>
+                    <div class="filter-categories">
+                        <div class="multiRange">
+                            <p>MultiRange</p>
+                            <ul>
+                                <li>
+                                    <input onchange="filterProduct (this.value)"  type="radio" name="multirange" value=0>
+                                    <label>All</label>
+                                </li>
+                                <li>
+                                    <input onchange="filterProduct (this.value)"  type="radio" name="multirange" value=1>
+                                    <label>
+                                        <=$10 </label>
+                                </li>
+                                <li>
+                                    <input onchange="filterProduct (this.value)" type="radio" name="multirange" value=2>
+                                    <label>$10-$100</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="multirange"  value=3>
+                                    <label>$100-$500</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="multirange" value=4>
+                                    <label>>=$500</label>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="priceRange">
+                            <p>Price Range</p>
+                            <input type="range" min="10" max="1000">
+                        </div>
+                        <div class="category">
+                            <p>Categories</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="category" value="Appliances">
+                                    <label>Appliances</label>
+                                </li>
+                                <li>
+                                    <input type="radio"name="category" value="Cameras & Camcorders">
+                                    <label> Cameras & Camcorders </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="category" value="Car Electronics & GPS">
+                                    <label>Car Electronics & GPS</label>
+                                </li>
+                                <li>
+                                    <input type="radio"name="category" value="Cell Phones">
+                                    <label>Cell Phones</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="category" value="Computers & Tablets">
+                                    <label>Computers & Tablets</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="category" value="Health, Fitness & Beauty">
+                                    <label>Health, Fitness & Beauty</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="category" value="Office & School Supplies">
+                                    <label>Office & School Supplies</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="category" value="TV & Home Theater">
+                                    <label>TV & Home Theater</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="category" value="Video Games">
+                                    <label>Video Games</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Brand">
+                            <p>MultiRange</p>
+                            <ul>
+                                <li>
+                                    <input type="radio">
+                                    <label>Insignia™</label>
+                                </li>
+                                <li>
+                                    <input type="radio">
+                                    <label>Samsung </label>
+                                </li>
+                                <li>
+                                    <input type="radio">
+                                    <label>Metra</label>
+                                </li>
+                                <li>
+                                    <input type="radio">
+                                    <label>HP</label>
+                                </li>
+                                <li>
+                                    <input type="radio">
+                                    <label>Apple</label>
+                                </li>
+                                <li>
+                                    <input type="radio">
+                                    <label>GE</label>
+                                </li>
+                                <li>
+                                    <input type="radio">
+                                    <label>Sony </label>
+                                </li>
+                                <li>
+                                    <input type="radio">
+                                    <label>Incipio</label>
+                                </li>
+                                <li>
+                                    <input type="radio">
+                                    <label>KitchenAid</label>
+                                </li>
+                                <li>
+                                    <input type="radio">
+                                    <label>KitchenAid</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Rating">
+                            <p>Rating</p>
+                            <div class="Rating-star">
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span>&up</span>
+                                </div>
+                                <div class="total">
+                                    <span>160</span>
+                                </div>
+                            </div>
+                            <div class="Rating-star">
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span>
+                                    <span>&up</span>
+                                </div>
+                                <div class="total">
+                                    <span>176</span>
+                                </div>
+                            </div>
+                            <div class="Rating-star">
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span>
+                                    <span>&up</span>
+                                </div>
+                                <div class="total">
+                                    <span>291</span>
+                                </div>
+                            </div>
+                            <div class="Rating-star">
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span>
+                                    <span>&up</span>
+                                </div>
+                                <div class="total">
+                                    <span>190</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </aside>
+                <section class="product">
+
+                    <section class="totalnumbers ">
+                        <div class="total">
+                            <p id="count"></p>
+                        </div>
+                        <div class="features">
+                            <div class="dropdown">
+                                <button id="featured" class="dropbtn">Featured<i class="fas fa-angle-down"></i></button>
+                                <div class="dropdown-content">
+
+                                    <button onclick="getLowToHighProduct()"> <a href="#">Lowest</a></button>
+                                    <button onclick=" getHighToLowProduct()"> <a href="#">Highest</a></button>
+                                    <button onclick="getProduct()"> <a href="#">Featured</a></button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="search">
+                        <input onkeyup="searchProduct(this.value)" id="Search" type="text" placeholder="search product">
+                    </section>
+                    <section class="items">
+                        <div class="row" id="informations">
+
+                        </div>
+                    </section>
+                </section>
+
+            </section>
+            <div class="setting">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="button-buy">
+                <button>
+                    <a href="">Buy Now</a>
+                </button>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+</html>

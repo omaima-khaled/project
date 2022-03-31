@@ -1,0 +1,384 @@
+    .body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.45;
+        color: #6e6b7b;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .container{
+        background-color: #aaa7b8;;
+    }
+    .header-navbar {
+        background-color: white;
+        padding: .5rem;
+        display: flex;
+        justify-content: space-between;
+        
+        padding: 10px;
+    }
+    .totalnumbers{
+        display: flex;
+        justify-content: space-between;
+       
+        width: 90%;
+        margin: auto;
+    }
+    #featured{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .dropdown-content button{
+        background-color: transparent;
+        border:none
+        
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    aside {
+        width: 25%;
+
+        margin-right: 20px;
+    }
+   
+    .title{
+        margin-bottom: 10px;
+       
+    }
+    .filter-categories{
+        background-color:white;
+        margin-top: 30px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .filter-categories p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 10px;
+    }
+     .filter-categories ul{
+         list-style: none;
+         font-size: .8rem;
+         color:#6e6b7b ;
+        
+     }
+    
+    .homeScreen {
+        width: 75%;
+       
+    }
+    
+    .rightIcon i,
+    .leftIcon i {
+        padding: .5rem;
+        color: #6e6b7b;
+    }
+    
+    
+    
+    .leftIcon {
+        display: flex;
+       
+     justify-content: flex-end;
+     width: 75%;
+    
+    }
+    
+    #star {
+        color: orange
+    }
+    
+    
+    .dropbtn {
+        font-size: 1rem;
+        border: none;
+       
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-top: .5rem;
+        min-width: 3rem;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: #6e6b7b;
+        padding: .5rem;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .personal {
+        display: flex;
+        justify-content: flex-start;
+        width: 25%;
+        
+    }
+    .personal .data {
+        font-size: smaller;
+        
+    }
+   
+    .photo{
+        padding-left: 10px;
+        width:50%
+        
+    }
+    .photo img {
+        width: 50%;
+        border-radius: 50%;
+    }
+    .search{
+        width: 100%;
+       
+        margin-top: 10px;
+      
+    }
+    .search input{
+        width: 90%;
+        padding: 20px;
+        margin-left: 20px;
+        border-radius: 10px;
+        border:none
+        
+        
+    }
+    .search input:focus{
+        border: none;
+        outline: none;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .content aside{
+        width: 25%;
+     
+      
+    }
+     .product{
+        width: 75%;
+      
+    }
+    .item{
+      
+        height: 100vh;
+    }
+    .items{
+        margin-top: 5px;
+      
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: space-evenly;
+        align-content: space-between;
+        margin-top: 10px;
+    
+    }
+    .colum{
+       width: 25%;
+       transition: all 2s , ;
+       background-color: white;
+        padding: 10px;
+        margin-top: 30px;
+        border-radius: 10px;
+       
+    }
+    .pImage{
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .pImage img{
+        width: 100%;
+       
+    }
+    .price{
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+    .btns button{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    #wish{
+        background-color: #7367f0;
+    }
+
+    #love a{
+        text-decoration: none;
+        color: black;
+    }
+    #wish a{
+   text-decoration: none;
+   color: white;
+    }
+.colum:hover{
+ position: relative;
+ bottom: 10px;
+ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.setting{
+    position:fixed;
+    top: 50%;
+    right: 10px;
+    background-color: #7367f0;
+}
+.setting i {
+    font-size: 1rem;
+    padding: 10px;
+    color: white;
+    
+}
+
+.button-buy {
+ position: fixed ;
+ bottom: 5%;
+ right: 5%;
+ 
+}
+.button-buy button{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border-color: #ea5455;
+    background-color: #ea5455;
+    box-shadow: 0 1px 20px 1px #ea5455!important
+
+}
+.button-buy button a{
+    text-decoration: none;
+    color: white;
+    
+}
+.productName p{
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Rating-star {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color:#6e6b7b
+    
+        
+    }
+
+.checked{
+    color:orange;
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+}
+.brand-name{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    color: #7367f0;
+}
+.brand-name img{
+    width: 50%;
+}
+.brand .icon {
+   font-size: 2rem;
+color: #7367f0;
+margin-top: 15px;
+margin-right: 10px;
+}
+#main-side{
+    background-color: white;
+}
+
+.DashBord{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation-bar span{
+    color:#a6a4b0
+}
+ul{
+    list-style: none;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    color: #6e6b7b;
+    margin-top: 5px;
+    
+}
+ a{
+    text-decoration: none;
+   
+}
+
+.navigation-bar li{
+    padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .colum{
+        width: 50%;
+      
+        
+    }
+   
+.sidebar{
+    display: none;
+}
+}
+@media only screen and (max-width: 600px)  {
+    .colum{
+        width: 50%;
+       
+        
+    }
+   
+.sidebar{
+    display: none;
+}
+#main-side{
+    display: none;
+}
+.homeScreen{
+    width: 100%;
+}
+
+
+}
+
+
+
